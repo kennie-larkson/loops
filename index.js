@@ -19,3 +19,38 @@ for(const item of data){
 // saucer
 // caserole
 // napkin
+
+data.map(item =>{
+     console.table(item.length);
+});
+
+// 3
+// 5
+// 5
+// 6
+// 8
+// 6
+
+for(const e in data){
+    console.log(e);
+}
+//index position
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+
+const fruits = [
+    { fruit : 'mangoes', cost : 30},
+    { fruit : 'oranges', cost : 20},
+    { fruit : 'bananas', cost : 40},
+    { fruit : 'apples', cost : 100},
+    { fruit : 'watermelons', cost : 120}
+];
+
+const cost = fruits.reduce( (acc, cur) =>{
+    return acc + cur.cost;
+},0);
+console.log(cost);//310
