@@ -54,3 +54,8 @@ const cost = fruits.reduce( (acc, cur) =>{
     return acc + cur.cost;
 },0);
 console.log(cost);//310
+
+data.splice(3,0,'chai');
+console.log(data);
+
+console.log(data.slice(0,5));
